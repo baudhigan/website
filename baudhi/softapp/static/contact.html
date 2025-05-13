@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delight Bistro - Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      text-align: center;
+      border-bottom: 2px solid #e63946;
+    }
+
+    header h1 {
+      color: #e63946;
+      font-size: 3.5rem;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #e63946;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #cccccc;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+      color: #f0f0f0;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #1f1f1f;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #e63946;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #c5303d;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      color: #888888;
+      margin-top: 60px;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Delight Bistro</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="administration.html">Administration</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+      <p><strong>Address:</strong> 123, Dubai Street, DUBAI 123456</p>
+      <p><strong>Phone:</strong> +91 69696 96969</p>
+      <p><strong>Email:</strong> contact@delightbistro.com</p>
+    </div>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Delight Bistro | All Rights Reserved
+  </footer>
+
+</body>
+</html>

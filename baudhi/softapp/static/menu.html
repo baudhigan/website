@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delight Bistro - Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      text-align: center;
+      border-bottom: 2px solid #e63946;
+    }
+
+    header h1 {
+      color: #e63946;
+      font-size: 3.5rem;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #e63946;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+      border-color: #e63946;
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .menu-item h3 {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .menu-item p {
+      color: #cccccc;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      color: #888888;
+      margin-top: 60px;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Delight Bistro</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Menu</a>
+      <a href="administration.html">Administration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+
+      <!-- Menu Items -->
+      <div class="menu-item">
+        <img src="grilled stake.jpg" alt="Grilled Steak">
+        <h3>Grilled Steak</h3>
+        <p>Perfectly seasoned, fire-grilled ribeye steak with herbs.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="seafood pasta.jpg" alt="Seafood Pasta">
+        <h3>Seafood Pasta</h3>
+        <p>Rich and creamy pasta with fresh shrimp, mussels, and scallops.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="classic burger.jpg" alt="Classic Burger">
+        <h3>Classic Burger</h3>
+        <p>Juicy beef patty, cheese, lettuce, tomato on a brioche bun.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="vegan bowl.jpg" alt="Vegan Bowl">
+        <h3>Vegan Bowl</h3>
+        <p>Quinoa, roasted vegetables, and hummus in a vibrant bowl.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="chicken tikka.jpg" alt="Chicken Tikka">
+        <h3>Chicken Tikka</h3>
+        <p>Spiced grilled chicken with creamy masala sauce and naan.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="margerita pizza.jpg" alt="Margherita Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Fresh mozzarella, basil, and tomato sauce on hand-tossed dough.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="beef tacos.jpg" alt="Beef Tacos">
+        <h3>Beef Tacos</h3>
+        <p>Crispy corn shells filled with spiced beef, salsa, and cheese.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="caeser salad.jpg" alt="Caesar Salad">
+        <h3>Caesar Salad</h3>
+        <p>Crisp romaine, creamy dressing, parmesan, and croutons.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="sushi plater.jpg" alt="Sushi Platter">
+        <h3>Sushi Platter</h3>
+        <p>Assorted sushi rolls made fresh with premium ingredients.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="thai curry.jpg" alt="Thai Curry">
+        <h3>Thai Curry</h3>
+        <p>Spicy coconut curry with chicken and vegetables over jasmine rice.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="cheesecake.jpg" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+        <p>Creamy New York-style cheesecake with a buttery crust.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="Chocolate Mousse.jpg" alt="Chocolate Mousse">
+        <h3>Chocolate Mousse</h3>
+        <p>Silky-smooth dark chocolate mousse topped with whipped cream.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Delight Bistro | All Rights Reserved
+  </footer>
+
+</body>
+</html>
